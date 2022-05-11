@@ -3,7 +3,7 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from tracksys import get_prices
 
-token = "5393889257:AAH1H4uxjgh2eVq2RH7sOgXnGtH-q8yFTpU"
+token = "TOKEN"
 
 updater = Updater(token=token, use_context=True)
 dispatcher = updater.dispatcher
