@@ -1,8 +1,8 @@
 import requests
 
-
 def get_prices():
-    coins = ["BTC", "ETH", "BNB", "SOL"]
+    coin_string = input("Enter tokens you want to track.\nDivide them with space.\n")
+    coins = coin_string.split()
 
     crypto_data = requests.get(
         "https://min-api.cryptocompare.com/data/pricemultifull?fsyms={}&tsyms=USD".format(",".join(coins))).json()["RAW"]
